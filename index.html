@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#6337b8">
+  <meta name="description" content="El Reino de las Palabras con el Profe Santiago: cuentos colombianos, leyendas, poemas, juegos y actividades de Lengua Castellana para niños de 10 a 12 años.">
+  <title>El Reino de las Palabras | Con el Profe Santiago</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="header-inner wrap">
+      <a class="brand" href="#inicio" aria-label="El Reino de las Palabras, inicio">
+        <span class="brand-castle" aria-hidden="true">🏰</span>
+        <span class="brand-copy"><strong>EL REINO DE LAS</strong><b>PALABRAS</b><small>con el Profe Santiago ✨</small></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Abrir menú">☰</button>
+      <nav class="main-nav" id="mainNav" aria-label="Navegación principal">
+        <a href="#biblioteca">📚 Cuentos</a>
+        <a href="#poesia">🎶 Poemas</a>
+        <a href="#taller">✍️ Taller</a>
+        <a href="#juegos">🎮 Juegos</a>
+        <a href="#cuaderno">📒 Cuaderno</a>
+      </nav>
+      <div class="star-counter" aria-live="polite" title="Estrellas ganadas en este navegador"><span>⭐</span><strong id="starCount">0</strong><small>estrellas</small></div>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" id="inicio">
+      <div class="hero-spark spark-a">✦</div><div class="hero-spark spark-b">✧</div><div class="hero-spark spark-c">★</div>
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow hero-eyebrow"><span class="pulse-dot"></span> ¡BIENVENIDOS, AVENTUREROS DE LAS PALABRAS!</div>
+          <h1>¡Entra al <span>Reino</span><br>de las <em>Palabras!</em></h1>
+          <p class="hero-lead">Un lugar para leer cuentos colombianos, escuchar poemas, resolver misterios y crear historias increíbles. ¡Aquí la imaginación tiene corona!</p>
+          <div class="hero-byline">👨‍🏫 Una aventura de Lengua Castellana con el <strong>Profe Santiago</strong></div>
+          <div class="hero-actions">
+            <a class="btn btn-sun" href="#biblioteca">¡Abrir la biblioteca! <span>📖</span></a>
+            <a class="btn btn-glass" href="#juegos">Quiero jugar <span>🎲</span></a>
+          </div>
+        </div>
+        <div class="hero-art" role="img" aria-label="Un castillo mágico de libros rodeado de estrellas, una rana lectora y un búho">
+          <div class="art-cloud cloud-left"></div><div class="art-cloud cloud-right"></div>
+          <div class="rainbow"></div>
+          <div class="castle-scene">
+            <div class="castle-tower tower-left"><span>✦</span></div>
+            <div class="castle-main"><div class="castle-roof"></div><div class="castle-window">☀</div><div class="castle-door">📚</div></div>
+            <div class="castle-tower tower-right"><span>✧</span></div>
+            <div class="castle-flag">⚑</div>
+          </div>
+          <div class="book-stack"><span>📘</span><span>📗</span><span>📙</span></div>
+          <div class="owl-friend">🦉<small>¡Hola!</small></div>
+          <div class="frog-friend">🐸<small>¡Lee conmigo!</small></div>
+          <div class="floating-book">📖</div><div class="floating-star">🌟</div>
+        </div>
+      </div>
+      <div class="hero-ribbon"><span>📚 LEER</span><i></i><span>💡 IMAGINAR</span><i></i><span>✍️ CREAR</span><i></i><span>🎉 DIVERTIRSE</span></div>
+    </section>
+
+    <section class="welcome-strip wrap" aria-label="Lo que encontrarás en el reino">
+      <div class="welcome-card card-pink"><span>📚</span><div><strong>16 historias</strong><small>Clásicos y leyendas</small></div></div>
+      <div class="welcome-card card-yellow"><span>🎵</span><div><strong>6 poemas</strong><small>¡Para leer y escuchar!</small></div></div>
+      <div class="welcome-card card-blue"><span>🧩</span><div><strong>4 juegos</strong><small>Retos para tu mente</small></div></div>
+      <div class="welcome-card card-green"><span>✏️</span><div><strong>Mil ideas</strong><small>Para crear y escribir</small></div></div>
+    </section>
+
+    <section class="section section-library" id="biblioteca">
+      <div class="wrap">
+        <div class="section-heading">
+          <div><div class="eyebrow"><span class="eyebrow-dot pink"></span> SALÓN 01 · LIBROS Y LEYENDAS</div><h2>La gran biblioteca<br><em>de Colombia</em> 🇨🇴</h2></div>
+          <p>Abre un libro y viaja por montañas, ríos, selvas y pueblos. Descubre personajes que viven en la literatura y en las historias que cuentan nuestras familias.</p>
+        </div>
+        <div class="library-tools">
+          <label class="search-box"><span>🔎</span><input id="storySearch" type="search" placeholder="Busca un cuento, personaje o región…" aria-label="Buscar cuentos y leyendas"></label>
+          <div class="filter-row" role="group" aria-label="Filtrar historias">
+            <button class="filter-chip active" data-filter="todos" type="button">🌈 Todas</button>
+            <button class="filter-chip" data-filter="pombo" type="button">🐸 Rafael Pombo</button>
+            <button class="filter-chip" data-filter="leyenda" type="button">🌿 Leyendas</button>
+            <button class="filter-chip" data-filter="original" type="button">✨ Cuentos nuevos</button>
+          </div>
+        </div>
+        <div class="story-grid" id="storyGrid" aria-live="polite"></div>
+        <div class="empty-state" id="storyEmpty" hidden>🔍 No encontramos esa historia. Prueba con otra palabra o región.</div>
+        <div class="library-note"><span>💡</span><p><strong>Una nota del Profe:</strong> las leyendas hacen parte de la tradición oral. Por eso, una misma historia puede contarse de distintas maneras según la familia, el pueblo o la región. Las versiones que encuentras aquí están adaptadas para aprender y disfrutar.</p></div>
+      </div>
+    </section>
+
+    <section class="region-section section" id="colombia">
+      <div class="wrap">
+        <div class="section-heading compact-heading">
+          <div><div class="eyebrow"><span class="eyebrow-dot green"></span> SALÓN 02 · VIAJE POR EL PAÍS</div><h2>Colombia es un <em>libro abierto</em> 🌎</h2></div>
+          <p>En cada región hay palabras, músicas, paisajes y relatos especiales. ¡Elige una parada de nuestra aventura!</p>
+        </div>
+        <div class="region-grid">
+          <button class="region-card region-caribe" data-region="Caribe" type="button"><span>🌴</span><strong>Caribe</strong><small>Ríos, ciénagas y caimanes</small><b>Explorar →</b></button>
+          <button class="region-card region-andes" data-region="Andina" type="button"><span>⛰️</span><strong>Andina</strong><small>Montañas, bosques y caminos</small><b>Explorar →</b></button>
+          <button class="region-card region-pacifico" data-region="Pacífico" type="button"><span>🐚</span><strong>Pacífico</strong><small>Lluvia, selva y mar</small><b>Explorar →</b></button>
+          <button class="region-card region-orinoquia" data-region="Orinoquía" type="button"><span>🐎</span><strong>Orinoquía</strong><small>Llanuras, ríos y coplas</small><b>Explorar →</b></button>
+          <button class="region-card region-amazonia" data-region="Amazonía" type="button"><span>🦜</span><strong>Amazonía</strong><small>Selva viva y biodiversidad</small><b>Explorar →</b></button>
+          <button class="region-card region-insular" data-region="Insular" type="button"><span>🐠</span><strong>Insular</strong><small>Islas, arrecifes y canciones</small><b>Explorar →</b></button>
+        </div>
+        <p class="region-hint" id="regionHint" aria-live="polite">Selecciona una región para encontrar las historias relacionadas en la biblioteca.</p>
+      </div>
+    </section>
+
+    <section class="section poetry-section" id="poesia">
+      <div class="wrap">
+        <div class="section-heading">
+          <div><div class="eyebrow"><span class="eyebrow-dot purple"></span> SALÓN 03 · MÚSICA DE LAS PALABRAS</div><h2>Un poema es una<br><em>canción escrita</em> 🎶</h2></div>
+          <p>Los poemas juegan con los sonidos, las imágenes y los sentimientos. Lee en voz alta, escucha y descubre cómo las palabras pueden pintar.</p>
+        </div>
+        <div class="poetry-intro">
+          <div class="poetry-mascot">🦋</div>
+          <div><strong>¡Psst! Un secreto poético…</strong><p>Cuando escuchas un poema, también puedes sentir su ritmo. Busca las palabras que riman, imagina los colores y deja que tu voz le dé vida.</p></div>
+          <div class="sound-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        </div>
+        <div class="poem-grid" id="poemGrid"></div>
+        <div class="pombo-corner">
+          <div class="pombo-portrait">✒️<span>R</span></div>
+          <div class="pombo-copy"><div class="eyebrow"><span class="eyebrow-dot yellow"></span> UN AUTOR PARA CONOCER</div><h3>Rafael Pombo, el poeta de los niños</h3><p>Rafael Pombo (Bogotá, 1833–1912) fue un poeta colombiano que escribió historias en verso llenas de humor, personajes inolvidables y enseñanzas. En sus libros encontramos a Rin Rin Renacuajo, Simón el Bobito, La pobre viejecita y muchos más.</p><p class="pombo-small">Los clásicos de Pombo que aparecen aquí tienen una guía de lectura y un resumen para escuchar. El texto completo puede consultarse en las bibliotecas digitales enlazadas.</p></div>
+          <div class="pombo-links" id="pomboLinks"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section language-section" id="palabras">
+      <div class="wrap">
+        <div class="section-heading compact-heading">
+          <div><div class="eyebrow"><span class="eyebrow-dot orange"></span> SALÓN 04 · CAJA DE HERRAMIENTAS</div><h2>Palabras que hacen<br><em>magia</em> 🪄</h2></div>
+          <p>Un pequeño diccionario para que entiendas los secretos de los cuentos, los poemas y las buenas historias.</p>
+        </div>
+        <div class="concept-grid">
+          <article class="concept-card concept-coral"><span>📘</span><h3>Cuento</h3><p>Relato breve que narra hechos reales o imaginarios. Tiene personajes, un lugar y una secuencia de acontecimientos.</p><small>Piensa: ¿quién vive la aventura?</small></article>
+          <article class="concept-card concept-lilac"><span>🧚</span><h3>Leyenda</h3><p>Historia de tradición oral que mezcla elementos de la realidad con sucesos maravillosos o misteriosos.</p><small>Piensa: ¿qué cuenta la comunidad?</small></article>
+          <article class="concept-card concept-mint"><span>🐢</span><h3>Fábula</h3><p>Narración breve que suele usar animales personificados y deja una enseñanza o moraleja.</p><small>Piensa: ¿qué aprendió el personaje?</small></article>
+          <article class="concept-card concept-sun"><span>🎼</span><h3>Poema</h3><p>Texto que juega con el ritmo, los sonidos y las imágenes para expresar ideas o emociones.</p><small>Piensa: ¿qué sentimiento transmite?</small></article>
+          <article class="concept-card concept-sky"><span>🧑‍🤝‍🧑</span><h3>Personajes</h3><p>Son quienes participan en la historia. Pueden ser principales, secundarios, héroes o antagonistas.</p><small>Piensa: ¿quién toma las decisiones?</small></article>
+          <article class="concept-card concept-peach"><span>🧭</span><h3>Narrador</h3><p>Es la voz que cuenta la historia. Puede participar en ella o contarla desde afuera.</p><small>Piensa: ¿quién nos cuenta lo sucedido?</small></article>
+          <article class="concept-card concept-sky"><span>🏞️</span><h3>Ambiente</h3><p>Es el lugar y el tiempo donde ocurren los hechos: una selva, una escuela, una noche lluviosa…</p><small>Piensa: ¿dónde y cuándo ocurre?</small></article>
+          <article class="concept-card concept-lilac"><span>🎨</span><h3>Adjetivo</h3><p>Palabra que describe cómo es una persona, animal, objeto o lugar: brillante, curioso, enorme.</p><small>Piensa: ¿cómo es?</small></article>
+          <article class="concept-card concept-mint"><span>🏃</span><h3>Verbo</h3><p>Palabra que expresa una acción o un estado: correr, imaginar, cantar, ser, estar.</p><small>Piensa: ¿qué hace?</small></article>
+          <article class="concept-card concept-coral"><span>🔔</span><h3>Rima</h3><p>Se produce cuando coinciden sonidos al final de dos o más versos. Puede ser consonante o asonante.</p><small>Piensa: canción – corazón.</small></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section workshop-section" id="taller">
+      <div class="wrap workshop-layout">
+        <div class="workshop-copy"><div class="eyebrow light"><span class="eyebrow-dot"></span> SALÓN 05 · ¡A CREAR!</div><h2>El taller de los<br><em>pequeños escritores</em> ✍️</h2><p>Ahora te toca a ti. Usa tu imaginación para inventar personajes, lugares y aventuras. ¡No hay una sola respuesta correcta!</p><div class="idea-cloud"><span>💭 IDEA PARA EMPEZAR</span><strong>¿Qué pasaría si un colibrí encontrara una puerta secreta en un árbol de la Amazonía?</strong><button type="button" id="newPrompt">Dame otra idea ↻</button></div><div class="writer-doodle">🖍️📒✏️</div></div>
+        <div class="writer-card">
+          <div class="writer-card-head"><span>🪄 LABORATORIO DE HISTORIAS</span><span class="writer-stars">✨</span></div>
+          <label for="writerTitle">El título de mi creación</label><input id="writerTitle" type="text" maxlength="90" placeholder="Ejemplo: El misterio del río brillante">
+          <label for="writerText">¡Escribe tu cuento o poema!</label><textarea id="writerText" rows="8" maxlength="1800" placeholder="Había una vez, en un rincón maravilloso de Colombia…"></textarea>
+          <div class="writer-tools"><span id="wordCount">0 palabras</span><div><button class="sticker-btn" type="button" data-sticker="🌟" aria-label="Agregar estrella">🌟</button><button class="sticker-btn" type="button" data-sticker="🦋" aria-label="Agregar mariposa">🦋</button><button class="sticker-btn" type="button" data-sticker="🌈" aria-label="Agregar arcoíris">🌈</button><button class="sticker-btn" type="button" data-sticker="🐸" aria-label="Agregar rana">🐸</button></div></div>
+          <div class="writer-actions"><button class="btn btn-purple" type="button" id="saveDraft">Guardar en este dispositivo 💾</button><button class="btn btn-outline" type="button" id="clearDraft">Borrar</button></div>
+          <p class="privacy-note">🔒 Tu texto se guarda únicamente en este navegador. No se envía a internet ni lo revisa automáticamente el Profe.</p>
+          <p class="draft-feedback" id="draftFeedback" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section games-section" id="juegos">
+      <div class="wrap">
+        <div class="section-heading">
+          <div><div class="eyebrow"><span class="eyebrow-dot blue"></span> SALÓN 06 · LA ISLA DE LOS RETOS</div><h2>¡A jugar con las<br><em>palabras!</em> 🎮</h2></div>
+          <p>Entrena tu mente con desafíos cortos. Lee con atención, prueba tus ideas y celebra cada respuesta correcta.</p>
+        </div>
+        <div class="game-grid" id="gameGrid">
+          <article class="game-card game-trivia"><div class="game-emoji">🧠</div><div class="game-badge">COMPRENSIÓN LECTORA</div><h3>El cofre de las preguntas</h3><p>Resuelve preguntas sobre personajes, leyendas y narraciones de Colombia.</p><button class="btn btn-blue game-start" data-game="trivia" type="button">¡Abrir el cofre! <span>→</span></button></article>
+          <article class="game-card game-words"><div class="game-emoji">🧩</div><div class="game-badge">GRAMÁTICA</div><h3>Detectives de palabras</h3><p>Descubre si cada palabra es un sustantivo, un adjetivo o un verbo.</p><button class="btn btn-purple game-start" data-game="words" type="button">¡Investigar! <span>→</span></button></article>
+          <article class="game-card game-rhyme"><div class="game-emoji">🎤</div><div class="game-badge">POESÍA Y RIMAS</div><h3>La máquina de rimar</h3><p>Encuentra palabras que suenan parecido y completa pequeños versos.</p><button class="btn btn-coral game-start" data-game="rhyme" type="button">¡Hacer rimar! <span>→</span></button></article>
+          <article class="game-card game-spelling"><div class="game-emoji">🕵️</div><div class="game-badge">ORTOGRAFÍA</div><h3>El misterio de las letras</h3><p>Corrige palabras, tildes y signos para convertirte en guardián de la escritura.</p><button class="btn btn-green game-start" data-game="spelling" type="button">¡Resolver el misterio! <span>→</span></button></article>
+        </div>
+        <div class="game-arena" id="gameArena" hidden aria-live="polite">
+          <button class="arena-close" id="closeGame" type="button" aria-label="Cerrar juego">✕</button>
+          <div class="arena-kicker" id="arenaKicker">RETO DEL REINO</div><div class="arena-progress"><span id="arenaProgress"></span></div>
+          <div id="gameContent"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section notebook-section" id="cuaderno">
+      <div class="wrap">
+        <div class="section-heading">
+          <div><div class="eyebrow"><span class="eyebrow-dot orange"></span> SALÓN 07 · MISIÓN DE PAPEL Y LÁPIZ</div><h2>¡Manos a la obra<br><em>en tu cuaderno!</em> 📒</h2></div>
+          <p>No todo ocurre en la pantalla. Dibuja, escribe, conversa y comparte tus ideas. Prepara tu lápiz: ¡tenemos misiones para ti!</p>
+        </div>
+        <div class="notebook-grid">
+          <article class="notebook-card notebook-pink"><div class="notebook-top"><span>✏️ MISIÓN 01</span><span>15 MIN</span></div><div class="notebook-icon">🦸</div><h3>Inventa un héroe colombiano</h3><p>Crea un personaje que viva en una región de Colombia. Dibuja su aspecto, escribe su nombre y explica qué problema quiere resolver.</p><ol><li>¿Cómo se llama y dónde vive?</li><li>¿Qué habilidad especial tiene?</li><li>¿Quién necesita su ayuda?</li><li>Escribe una aventura de tres párrafos.</li></ol><button class="mission-done" data-mission="hero" type="button">¡Misión cumplida! ⭐</button></article>
+          <article class="notebook-card notebook-yellow"><div class="notebook-top"><span>✏️ MISIÓN 02</span><span>10 MIN</span></div><div class="notebook-icon">🎨</div><h3>Pinta con palabras</h3><p>Elige un paisaje colombiano: una playa, un río, una montaña o una selva. Descríbelo para que otra persona pueda imaginarlo.</p><ol><li>Escribe cinco adjetivos.</li><li>Incluye dos comparaciones: “brilla como…”</li><li>Usa al menos tres verbos.</li><li>Lee tu descripción en voz alta.</li></ol><button class="mission-done" data-mission="paint" type="button">¡Misión cumplida! ⭐</button></article>
+          <article class="notebook-card notebook-blue"><div class="notebook-top"><span>✏️ MISIÓN 03</span><span>20 MIN</span></div><div class="notebook-icon">📚</div><h3>Entrevista a una leyenda</h3><p>Imagina que puedes conversar con la Madremonte, el Mohán o el Hombre Caimán. Prepara una entrevista divertida.</p><ol><li>Escribe cinco preguntas.</li><li>Responde como si fueras el personaje.</li><li>Incluye una pregunta sobre su región.</li><li>Termina con un consejo para los lectores.</li></ol><button class="mission-done" data-mission="interview" type="button">¡Misión cumplida! ⭐</button></article>
+          <article class="notebook-card notebook-green"><div class="notebook-top"><span>✏️ MISIÓN 04</span><span>15 MIN</span></div><div class="notebook-icon">🎵</div><h3>Construye tu poema</h3><p>Escribe un poema de cuatro estrofas sobre algo que quieras cuidar: el agua, los animales, tu familia o tu escuela.</p><ol><li>Elige un tema y un título.</li><li>Escribe cuatro versos por estrofa.</li><li>Busca palabras que rimen.</li><li>Agrega un dibujo y léelo con ritmo.</li></ol><button class="mission-done" data-mission="poem" type="button">¡Misión cumplida! ⭐</button></article>
+        </div>
+        <div class="print-panel"><div><strong>🖨️ ¿Quieres llevar las misiones al salón?</strong><p>Imprime esta página para desarrollar las actividades en papel.</p></div><button class="btn btn-outline" id="printPage" type="button">Imprimir actividades</button></div>
+      </div>
+    </section>
+
+    <section class="teacher-note-section">
+      <div class="wrap teacher-note"><div class="teacher-avatar">👨‍🏫</div><div><span>UN MENSAJE DEL PROFE SANTIAGO</span><h2>¡Las palabras también son aventuras!</h2><p>Lee con curiosidad, pregunta sin miedo, escucha las historias de tu familia y nunca dejes de imaginar. Cada palabra nueva es una llave que abre una puerta. ¡Nos vemos en el Reino!</p></div><div class="teacher-decoration">👑✨📖</div></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-top"><div class="footer-brand"><span>🏰</span><div><strong>El Reino de las Palabras</strong><small>Con el Profe Santiago · Lengua Castellana</small></div></div><p>Un reino para leer, escuchar, imaginar y crear. Hecho con cariño para pequeños grandes lectores de Colombia. 💜</p></div>
+    <div class="wrap sources"><details><summary>📚 Fuentes y lecturas para seguir explorando</summary><ul>
+      <li><a href="https://maguare.gov.co/con-pombo-y-platillos/" target="_blank" rel="noopener">Maguaré – Con Pombo y platillos (Ministerio de las Culturas)</a></li>
+      <li><a href="https://www.bibliotecadigitaldebogota.gov.co/resources/3681482/" target="_blank" rel="noopener">Biblioteca Digital de Bogotá – El renacuajo paseador</a></li>
+      <li><a href="https://www.bibliotecanacional.gov.co/es-co/Bibliotecas-en-Red/bibliotecas-publicas-moviles/Itinerancias/la-madremonte.html" target="_blank" rel="noopener">Biblioteca Nacional – La Madremonte</a></li>
+      <li><a href="https://www.bibliotecanacional.gov.co/es-co/Bibliotecas-en-Red/bibliotecas-publicas-moviles/Itinerancias/cuento-del-mohan.html" target="_blank" rel="noopener">Biblioteca Nacional – Cuento del Mohán</a></li>
+      <li><a href="https://nidos.gov.co/juega-con-nidos/me-contaban-los-abuelos" target="_blank" rel="noopener">Nidos – Me contaban los abuelos: Patasola, Hombre Caimán y Hojarasquín</a></li>
+    </ul><p class="source-note">Las historias tradicionales están adaptadas en lenguaje escolar y pueden tener otras versiones. Los poemas de esta página son originales, escritos para este proyecto. Los textos clásicos de Rafael Pombo se presentan mediante reseñas y enlaces a bibliotecas, no como reproducciones completas.</p></details></div>
+    <div class="footer-bottom"><span>© <span id="year"></span> El Reino de las Palabras</span><span>🌟 ¡Que nunca se apague tu imaginación!</span></div>
+  </footer>
+
+  <div class="story-modal" id="storyModal" hidden role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-backdrop" data-close-modal></div>
+    <article class="modal-card"><button class="modal-close" type="button" data-close-modal aria-label="Cerrar lectura">✕</button><div id="modalContent"></div></article>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <button class="back-top" id="backTop" type="button" aria-label="Volver arriba">↑</button>
+</body>
+</html>
