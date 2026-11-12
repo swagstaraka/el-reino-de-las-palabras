@@ -24,30 +24,6 @@ La función de lectura en voz alta utiliza `SpeechSynthesis` del navegador. La v
 
 Las fuentes tipográficas se cargan desde Google Fonts cuando hay conexión; si no, se usan fuentes alternativas instaladas en el dispositivo.
 
-## 🚀 Publicar gratis con GitHub Pages y Actions
-
-1. Descarga y descomprime el archivo ZIP.
-2. Crea un repositorio en GitHub. Para usar GitHub Free con Pages, utiliza un repositorio público.
-3. Sube **todo el contenido** de esta carpeta a la raíz del repositorio. Deben quedar `index.html`, `styles.css`, `app.js`, `assets/` y `.github/workflows/deploy.yml` en la raíz/ruta indicada.
-4. En GitHub, abre **Settings → Pages**.
-5. En **Build and deployment → Source**, selecciona **GitHub Actions**.
-6. Abre la pestaña **Actions** y espera a que termine el flujo **Publicar El Reino de las Palabras**.
-7. Cuando el flujo termine correctamente, GitHub mostrará la URL de GitHub Pages. Normalmente tendrá esta forma:
-
-   `https://TU-USUARIO.github.io/NOMBRE-DEL-REPOSITORIO/`
-
-Cada actualización que subas a `main` volverá a publicar el sitio automáticamente. También puedes iniciar la publicación manualmente desde **Actions → Publicar El Reino de las Palabras → Run workflow**.
-
-## 🖥️ Probar en tu computador
-
-Puedes abrir `index.html` directamente con un navegador moderno. Para una prueba local más parecida a GitHub Pages, inicia un servidor estático desde la carpeta del proyecto, por ejemplo:
-
-```bash
-python -m http.server 8000
-```
-
-Luego abre `http://localhost:8000`.
-
 ## 📚 Fuentes de consulta y criterio de adaptación
 
 - [Maguaré — Con Pombo y platillos](https://maguare.gov.co/con-pombo-y-platillos/), colección de clásicos infantiles de Rafael Pombo.
